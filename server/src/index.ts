@@ -29,6 +29,7 @@ app.use("/expenses", expenseRoutes); // http://localhost:8000/expenses
 
 
 const port = Number(process.env.PORT) || 3001;
+//0.0.0.0 represents our CER block else it will not work in aws.
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server running on port ${port}`);
 });
